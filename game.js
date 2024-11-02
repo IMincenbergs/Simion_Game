@@ -22,7 +22,7 @@ $(document).keydown(function () {
 
 });
 
-$(document).on("touchstart", function() {
+$(document).on("click touchstart", function() {
     if (keyPress) {
         nextSequence();
        
