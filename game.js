@@ -22,6 +22,13 @@ $(document).keydown(function () {
 
 });
 
+$(document).on("touchstart", function() {
+    if (keyPress) {
+        nextSequence();
+       
+    }
+});
+
 function nextSequence() {
     var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColour = buttonColours[randomNumber];
